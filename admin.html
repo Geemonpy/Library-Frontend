@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Admin Dashboard Using HTML CSS & JavaScript</title>
+    <!-- MATERIAL CDN -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+    />
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="css/admin.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- =================== START OF CONTAINER =================== -->
+    <div class="container">
+      <!-- =================== START OF ASIDE =================== -->
+      <aside>
+        <!-- =================== START OF TOP =================== -->
+        <div class="top">
+          <!-- =================== START OF LOGO =================== -->
+          <div class="logo">
+          
+            <h2>BOOKCORNOR</h2>
+          </div>
+          <!-- =================== END OF LOGO =================== -->
+
+          <!-- =================== START OF CLOSE ICON =================== -->
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp">close</span>
+          </div>
+          <!-- =================== END OF CLOSE ICON =================== -->
+        </div>
+        <!-- =================== END OF TOP =================== -->
+
+        <!-- =================== START OF SIDEBAR =================== -->
+        <div class="sidebar">
+          <a data-aos="fade-right" data-aos-duration="1000"  href="#">
+            <span class="material-icons-sharp">dashboard</span>
+            <h3>Dashboard</h3>
+          </a>
+          
+          <a data-aos="fade-right" data-aos-duration="1000"  href="#">
+            <span class="material-icons-sharp">settings</span>
+            <h3>Settings</h3>
+          </a>
+          <a data-aos="fade-right" data-aos-duration="1000"  href="#">
+            <span class="material-icons-sharp">message</span>
+            <h3>Message</h3>
+          </a>
+         
+          <a data-aos="fade-right" data-aos-duration="1000"  href="/public/index.html">
+            <span style="margin-top:10px;"  class="material-icons-sharp">logout</span>
+            <h3>Logout</h3>
+          </a>
+          <a data-aos="fade-right" data-aos-duration="1000"  href="/public/index.html">
+            <span style="margin-top:10px;"  ></span>
+            <h3></h3>
+          </a>
+          <a href="index.html">
+            <span style="margin-top:10px;"  ></span>
+            <h3></h3>
+          </a>
+         
+         
+        </div>
+        <!-- =================== END OF SIDEBAR =================== -->
+      </aside>
+      <!-- =================== END OF ASIDE =================== -->
+
+      <!-- =================== START OF MAIN =================== -->
+      <main>
+        <h1data-aos="zoom-out" data-aos-duration="1000" >Dashboard</h1>
+
+        <div class="date">
+          <input type="date" />
+        </div>
+        <!-- =================== START OF INSIGHTS =================== -->
+        <div data-aos="fade-up" data-aos-duration="1000"  class="insights">
+          <!-- =================== book collection =================== -->
+          <div class="sales">
+            <span class="material-icons-sharp">person</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Users</h3>
+                <h1>25,024</h1>
+              </div>
+              
+            </div>
+           
+          </div>
+          <!-- =================== END OF SALES =================== -->
+
+       
+
+          <!-- =================== current stock =================== -->
+          <div data-aos="fade-up" data-aos-duration="1000"  class="income">
+            <span class="material-icons-sharp">stacked_line_chart</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Current Book Stock</h3>
+                <h1>10,864</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>44%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <!-- =================== END OF books=================== -->
+        </div>
+        <!-- =================== START OF INSIGHTS =================== -->
+
+
+        <div  class="recent-orders">
+          <h2>Recent Orders</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Book Name</th>
+                <th>Book id</th>
+                <th>Stock</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+               <tr>
+                <td>Rich dad poor dad</td>
+                <td>85631</td>
+                <td style="color:green;">instock</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+              </tr> 
+              <tr>
+                <td>Atomic habits</td>
+                <td>85632</td>
+                <td style="color:red;">out of stock</td>
+                <td class="warning">Pending</td>
+                <td class="primary">Details</td>
+              </tr> 
+            </tbody>
+          </table>
+
+          <a href="#">Show All</a>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- ===================members list =================== -->
+        <div class="recent-orders">
+          <h2>Members</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>User Name</th>
+                <th>User id</th>
+                <th>Status</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+               <tr>
+                <td>Sean</td>
+                <td>54455</td>
+                <td style="color:green;">Member</td>
+                <td style="color:white;padding:10px;background-color:rgb(206, 31, 31);border-radius:6px;" class="Remove"> Remove</td>
+                <td class="primary">Details</td>
+              </tr> 
+              <tr>
+                <td>kevin</td>
+                <td>85632</td>
+                <td style="color:green;">Member</td>
+                <td style="color:white;padding:10px;background-color:rgb(206, 31, 31);border-radius:6px;" class="Remove"> Remove</td>
+                <td class="primary">Details</td>
+              </tr> 
+              <tr>
+                <td>Sean</td>
+                <td>54455</td>
+                <td style="color:green;">Member</td>
+                <td style="color:white;padding:10px;background-color:rgb(206, 31, 31);border-radius:6px;" class="Remove"> Remove</td>
+                <td class="primary">Details</td>
+              </tr> 
+              <tr>
+                <td>kevin</td>
+                <td>85632</td>
+                <td style="color:green;">Member</td>
+                <td style="color:white;padding:10px;background-color:rgb(206, 31, 31);border-radius:6px;" class="Remove"> Remove</td>
+                <td class="primary">Details</td>
+              </tr> 
+            </tbody>
+          </table>
+
+          <a href="#">Show All</a>
+        </div>
+        <!-- =================== END OF members list=================== -->
+      </main>
+      <!-- =================== END OF MAIN =================== -->
+
+      <!-- =================== START OF RIGHT =================== -->
+      <div class="right">
+        <!-- =================== START OF TOP =================== -->
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-icons-sharp">menu</span>
+          </button>
+          <div class="theme-toggler">
+            <span class="active material-icons-sharp">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+          </div>
+          <div class="profile">
+            <div class="info">
+              <p>Hey, <b>Daniel</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+              <img src="/public/images/PERSON.png" />
+            </div>
+          </div>
+        </div>
+        <!-- =================== END OF TOP =================== -->
+
+
+
+          <!-- =================== END OF ITEM =================== -->
+
+    
+      </div>
+      <!-- =================== END OF RIGHT =================== -->
+    </div>
+    <!-- =================== END OF CONTAINER =================== -->
+    <script src="js/orders.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

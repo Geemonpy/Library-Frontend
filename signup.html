@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+     <!-- ICon Scout CDN -->
+     <link rel="stylesheet" id="roboto-subset.css-css" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/mdb5/fonts/roboto-subset.css?ver=3.9.0-update.5" type="text/css" media="all">
+     <link rel="stylesheet" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/dist/mdb5/standard/core.min.css">
+     <link rel="stylesheet" id="roboto-subset.css-css" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/mdb5/fonts/roboto-subset.css?ver=3.9.0-update.5" type="text/css" media="all">
+     <link rel="shortcut icon" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/favicon.ico">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- ICon Scout CDN -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <!--Google fonts Montserrat-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+ 
+  
+</head>
+<style>
+  .submit-btn{
+
+    background-color: rgb(34, 34, 199);
+    color: white;
+    width: 80%;
+    padding: 8px;
+    border-radius: 6px;
+  }
+</style>
+<style>
+   .bg-glass {
+  
+      background-color:snowhite;
+      backdrop-filter: saturate(200%) blur(25px);
+    }
+
+      
+      .bg-glass {
+        background-color:#424890;
+        backdrop-filter: saturate(200%) blur(25px);
+        color: white;
+      }
+      .form-label{
+        color: white;
+      }
+      .for{
+        margin-bottom: 100px;
+      }
+      #icon{
+        color: white;
+      }
+      .card{
+        background-color:#424890 ;
+        color: white;
+      }
+      a{
+        color: white;
+      }
+    </style>
+<body style="background-color:#2e3267;">
+
+  <!-- ================ NAVBAR =============== -->
+
+  <nav>
+    <div class="container nav__container">
+      <a href="./">
+        <h4>BookCorner</h4>
+      </a>
+      <ul class="nav__menu">
+        <li><a href="./">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+      <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+      <button id="close-menu-btn"><i class="uil uil-times"></i></button>
+    </div>
+  </nav>
+
+  <!-- ================ NAVBAR Ends Here =============== -->
+
+  <!-- ================ Header =============== -->
+
+  <section>
+    <div class="container header__container">
+      <div class="header__left">
+      
+
+        
+       
+        
+                <div  data-aos="fade-up" data-aos-duration="1000" class="card" style="border-radius: 15px;">
+                  <div class="card-body p-4">
+                    <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+      
+                    <form>
+      
+                      <div class="form-outline mb-4">
+                        <input type="text" id="form3Example1cg" class="name form-control form-control-lg border   " style="color: white;" />
+                        <label class="form-label text-light" for="form3Example1cg">Your Name</label>
+                      </div>
+      
+                      <div class="form-outline mb-4">
+                        <input type="email" id="form3Example3cg" class="email form-control form-control-lg border"  style="color: white;"/>
+                        <label class="form-label text-light" for="form3Example3cg">Your Email</label>
+                      </div>
+      
+                      <div class="form-outline mb-4">
+                        <input type="password" id="form3Example4cg" class="password form-control form-control-lg border" style="color: white;" />
+                        <label class="form-label text-light" for="form3Example4cg">Password</label>
+                      </div>
+      
+                      
+      
+      
+                      <div class="d-flex justify-content-center">
+                        <button type="button" 
+                          class="submit-btn" onclick="helo()" style="color:white;">Register</button>
+                      </div>
+      
+                      <p class="text-center text-light mt-5 mb-0" style="color: white;">Have already an account? <a href="login.html"
+                          class="fw-bold text-body" style="color: white;"> &nbsp; &nbsp;<u style="color:white ;">Login here</u></a></p>
+      
+                    </form>
+      
+                  </div>
+                </div>
+              
+    
+
+
+        
+       
+        
+      
+      </div>
+      <div class="header__right">
+        <div class="header__right-img">
+          <img data-aos="zoom-out" data-aos-duration="2000" src="images/signup.png" alt="header images">
+        </div>
+      </div>
+    </div>
+</section>
+
+  <!-- ================End Of Header =============== -->
+ 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      //when width is above 600px
+      breakpoints: {
+        600: {
+          slidesPerView: 2,
+        }
+      }
+
+    });
+  </script>
+</body>
+</html>

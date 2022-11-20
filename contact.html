@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education Webiste</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/contact.css">
+
+
+  <!-- ICon Scout CDN -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <!--Google fonts Montserrat-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ================ NAVBAR =============== -->
+
+  <nav>
+    <div class="container nav__container">
+      <a href="/">
+        <h4 >BookCorner</h4>
+      </a>
+      <ul class="nav__menu">
+        <li><a href="./">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="collection.html">Collection</a></li>
+        <li><a href="admin.html">Admin</a></li>
+      </ul>
+      <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+      <button id="close-menu-btn"><i class="uil uil-times"></i></button>
+    </div>
+  </nav>
+
+  <!-- ================ NAVBAR Ends Here =============== -->
+
+  <section class="contact">
+    <div  class="container contact__container">
+      <aside data-aos="fade-up" data-aos-duration="1000"  class="contact__aside">
+        <div   class="aside__image">
+          <img src="./images/contact.svg" alt="contact image">
+          <h2>Contact Us</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, molestiae?</p>
+          <ul class="contact__details">
+            <li>
+              <i class="uil uil-phone-times"></i>
+              <h5>+91 8921241107</h5>
+            </li>
+            <li>
+              <i class="uil uil-envelope"></i>
+              <h5>geemondas@gmail.com</h5>
+            </li>
+            <li>
+              <i class="uil uil-location-point"></i>
+              <h5>kerala, India</h5>
+            </li>
+          </ul>
+          <ul class="contact__socials">
+            <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+            <li><a href="#"><i class="uil uil-instagram"></i></a></li>
+            <li><a href="#"><i class="uil uil-twitter"></i></a></li>
+            <li><a href="#"><i class="uil uil-linkedin-alt"></i></a></li>
+          </ul>
+        </div>
+      </aside>
+      <form data-aos="fade-right" data-aos-duration="1000" class="contact__form" method="post" action="https://formspree.io/f/mjvzbnrb">
+        <div class="form__name">
+          <input type="text" name="First name" placeholder="First Name" required>
+          <input type="text" name="Last name" placeholder="Last Name" required>
+        </div>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="Message"rows="7" placeholder="Message" required></textarea>
+        <button class="submit btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+
+
+  <!-- ================ Footer =============== -->
+
+  
+
+   
+
+    <footer  style="background-color: #424890;">
+      <div class=" container footer__container">
+        <div data-aos="fade-up" data-aos-duration="1000" class="footer__1">
+          <a href="index.html" class="footer__logo"><h4 data-aos="fade-up" data-aos-duration="1000">Bookcorner</h4></a>
+          <p style="color: white;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, dolorem!</p>
+        </div>
+     
+        <div data-aos="fade-up" data-aos-duration="1000" class="footer__2">
+          <h4 style="color: white;">Contact Us</h4>
+          <div>
+            <p style="color: white;">8921241107</p>
+            <p  style="color: white;">geemondas10@gmail.com</p>
+          </div>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="uil uil-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="uil uil-instagram-alt"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="uil uil-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <small data-aos="fade-up" data-aos-duration="1000" style="color: white;">Copyright &copy;geemondas/github</small>
+      </div>
+    </footer>
+  
+  <!-- ================ End Of Footer =============== -->
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
+  
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      //when width is above 600px
+      breakpoints: {
+        600: {
+          slidesPerView: 2,
+        }
+      }
+
+    });
+  </script>
+
+</body>
+
+</html>
